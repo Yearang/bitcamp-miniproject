@@ -29,6 +29,34 @@
     top: 10px;
     margin: 18px;
 }
-@media(max-width: 480) {
-
+@media(max-width: 480px) {
+#wrap {
+    width: 100%; height: 640px;
+}
+#icon {
+    padding: 5%;
+    width: 100%;
+    height: 50%;
+}
+#graph {
+    padding: 5%;
+    width: 100%;
+    height: 50%;
+}
+.skillGraphTitle {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eceeef;
+}
+.skillGraphSubTitle {
+    margin: 10px;
+}
+.graphleft {
+    float: left;
+}
+.graphright div.progress {
+    position: relative;
+    top: 10px;
+    margin: 18px;
+}
 }
