@@ -7,6 +7,23 @@
     width: 55%;
     height: 100%;
 }
+#icon div{
+    display: inline-block;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    float: left;
+}
+#icon img{
+    margin: 0px;
+    padding: 0px;
+    width: 150px;
+    height: 150px;
+}
+#icon p{
+    width: 150px;
+    height: 70px;
+}
 #graph {
     padding: 5%;
     float: right;
