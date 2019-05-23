@@ -1,0 +1,19 @@
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.dropdown-toggle{
+    margin-top: 0px;
+    padding: 0px;
+/*    background-color: */
+}
+#themes{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+li.nav-item.dropdown{
+    padding: 5.375px 0px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #1a1a1a;
+}
