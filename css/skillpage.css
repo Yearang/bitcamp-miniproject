@@ -1,0 +1,34 @@
+#wrap {
+    width: 100%; height: 810px;
+}
+#icon {
+    padding: 5%;
+    float: left;
+    width: 55%;
+    height: 100%;
+}
+#graph {
+    padding: 5%;
+    float: right;
+    width: 45%;
+    height: 100%;
+}
+.skillGraphTitle {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eceeef;
+}
+.skillGraphSubTitle {
+    margin: 10px;
+}
+.graphleft {
+    float: left;
+}
+.graphright div.progress {
+    position: relative;
+    top: 10px;
+    margin: 18px;
+}
+@media(max-width: 480) {
+
+}
