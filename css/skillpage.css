@@ -1,0 +1,123 @@
+#wrap {
+    width: 100%;
+    height: 810px;
+}
+
+#icon {
+    padding: 5%;
+    float: left;
+    width: 55%;
+    height: 100%;
+}
+
+#icon div {
+    text-align: center;
+    display: inline-block;
+    margin: 30px;
+    width: 150px;
+    height: 250px;
+    float: left;
+}
+
+#icon img {
+    margin: 0px;
+    margin-bottom: 20px;
+    padding: 0px;
+    width: 150px;
+    height: 150px;
+}
+
+#graph {
+    padding: 5%;
+    float: right;
+    width: 45%;
+    height: 100%;
+}
+
+.skillGraphTitle {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eceeef;
+}
+
+.skillGraphSubTitle {
+    margin: 10px;
+}
+
+.graphleft {
+    float: left;
+}
+
+.graphright div.progress {
+    position: relative;
+    top: 10px;
+    margin: 18px;
+}
+
+@media(max-width: 480px) {
+
+    #wrap {
+        width: 100%;
+        height: 640px;
+    }
+
+    #icon {
+        padding: 5%;
+        width: 100%;
+        height: auto;
+    }
+
+    #graph {
+        padding: 5%;
+        width: 100%;
+        height: 50%;
+    }
+
+    .skillGraphTitle {
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eceeef;
+    }
+
+    .skillGraphSubTitle {
+        margin: 10px;
+    }
+
+    .graphleft {
+        float: left;
+    }
+
+    .graphright div.progress {
+        position: relative;
+        top: 10px;
+        margin: 18px;
+    }
+
+    #icon {}
+
+    #icon div {
+        margin: 1%;
+        padding: 0px;
+        width: 30%;
+        height: 200px;
+    }
+
+    #icon h3 {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        width: 90%;
+        font-size: 14px;
+    }
+
+    h3.jsf {
+        position: relative;
+        right: 10px;
+    }
+
+    #icon img {
+        height: 100px;
+        width: 100px;
+        margin-bottom: 10px;
+    }
+}
