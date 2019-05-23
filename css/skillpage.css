@@ -1,79 +1,129 @@
 #wrap {
-    width: 100%; height: 810px;
+    width: 100%;
+    height: 810px;
 }
+
 #icon {
     padding: 5%;
     float: left;
     width: 55%;
     height: 100%;
 }
-#icon div{
+
+#icon div {
     display: inline-block;
-    margin: 10px;
+    margin: 15px;
     width: 150px;
     height: 250px;
     float: left;
 }
-#icon img{
+
+#icon img {
     margin: 0px;
     padding: 0px;
     width: 150px;
     height: 150px;
 }
-#icon p{
+
+#icon p {
     width: 150px;
     height: 70px;
 }
+
 #graph {
     padding: 5%;
     float: right;
     width: 45%;
     height: 100%;
 }
+
 .skillGraphTitle {
     margin-bottom: 30px;
     padding-bottom: 10px;
     border-bottom: 1px solid #eceeef;
 }
+
 .skillGraphSubTitle {
     margin: 10px;
 }
+
 .graphleft {
     float: left;
 }
+
 .graphright div.progress {
     position: relative;
     top: 10px;
     margin: 18px;
 }
+
 @media(max-width: 480px) {
-#wrap {
-    width: 100%; height: 640px;
-}
-#icon {
-    padding: 5%;
-    width: 100%;
-    height: 50%;
-}
-#graph {
-    padding: 5%;
-    width: 100%;
-    height: 50%;
-}
-.skillGraphTitle {
-    margin-bottom: 30px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eceeef;
-}
-.skillGraphSubTitle {
-    margin: 10px;
-}
-.graphleft {
-    float: left;
-}
-.graphright div.progress {
-    position: relative;
-    top: 10px;
-    margin: 18px;
-}
+
+    #wrap {
+        width: 100%;
+        height: 640px;
+    }
+
+    #icon {
+        padding: 5%;
+        width: 100%;
+        height: auto;
+    }
+
+    #graph {
+        padding: 5%;
+        width: 100%;
+        height: 50%;
+    }
+
+    .skillGraphTitle {
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eceeef;
+    }
+
+    .skillGraphSubTitle {
+        margin: 10px;
+    }
+
+    .graphleft {
+        float: left;
+    }
+
+    .graphright div.progress {
+        position: relative;
+        top: 10px;
+        margin: 18px;
+    }
+
+    #icon {
+    }
+
+    #icon div {
+        margin: 1%;
+        padding: 0px;
+        width: 30%;
+        height: 180px;
+    }
+    #icon p {
+        text-align: center;
+        margin: 0px;
+        padding: 5px;
+        width: 100%;
+        font-size: 12px
+    }
+    #icon h3 {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-size: 16px
+    }
+
+    #icon img {
+        margin-left: 10px;
+        height: 100px;
+        width: 100px;
+        margin-bottom: 10px;
+    }
 }
