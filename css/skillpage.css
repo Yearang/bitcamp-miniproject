@@ -11,6 +11,7 @@
 }
 
 #icon div {
+    text-align: center;
     display: inline-block;
     margin: 15px;
     width: 150px;
@@ -20,6 +21,7 @@
 
 #icon img {
     margin: 0px;
+    margin-bottom: 20px;
     padding: 0px;
     width: 150px;
     height: 150px;
