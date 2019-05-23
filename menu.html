@@ -3,40 +3,50 @@
 
 <head>
     <meta charset="UTF-8">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
     <title>Document</title>
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/menu.css" >
+<!--    <link rel="stylesheet" media="screen and (min-width:481px)" href="css/menu.css">-->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/menu_mobile.js"></script>
+-->
+
+
+
+
 </head>
 
 <body>
-    <div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
         <div class="container">
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+<!--
+            <button class="navbar-toggler" type="button" data-target="#navbarResponsive">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!--        <div class="collapse navbar-collapse" id="navbarResponsive">-->
+-->
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="../" class="navbar-brand">home</a>
+                    <a href="../" class="navbar-item">home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../" class="navbar-brand">about</a>
+                    <a href="about.html" class="navbar-item">about</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle navbar-brand" data-toggle="dropdown" href="#" id="themes">portfolio <span class="caret"></span></a>
+                    <a class="nav-link dropdown-toggle navbar-item" data-toggle="dropdown" href="#" id="themes">portfolio <span class="caret"></span></a>
                     <div class="dropdown-menu" aria-labelledby="themes">
                         <a class="dropdown-item" href="#">Default</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="../cerulean/">Portfolio1</a>
-                        <a class="dropdown-item" href="../cosmo/">Portfolio2</a>
-
+                        <a class="dropdown-item" href="#">Portfolio1</a>
+                        <a class="dropdown-item" href="#">Portfolio2</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="navbar-brand" href="#">contact</a>
+                    <a class="navbar-item" href="#">contact</a>
                 </li>
             </ul>
         </div>
-    </div>
+    </nav>
 </body></html>
