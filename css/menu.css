@@ -17,3 +17,18 @@ li.nav-item.dropdown{
 .navbar-light .navbar-nav .nav-link {
     color: #1a1a1a;
 }
+body > div > div{
+    padding: 0px auto;
+}
+.navbar-nav{
+    margin: 0 auto;
+}
+.navbar-item{
+    display: inline-block;
+    padding-top: 0.3359375rem;
+    padding-bottom: 0.3359375rem;
+    margin-right: 1rem;
+    font-size: 1.09375rem;
+    line-height: inherit;
+    white-space: nowrap
+}
