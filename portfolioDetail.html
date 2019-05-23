@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #menu {
+            height: 110px;
+            position: relative;
+        }
+
+        section {
+            width:30%
+        }
+        .text{
+            float: left;
+            position: relative;
+            display: inline-block;
+        }
+        .bxslider{
+            float: left;
+            position: relative;
+            display: inline-block;
+        }
+        article{
+            width: 60%;
+            margin: 0 auto;
+        }
+        #aa{
+            height: 100px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        $('document').ready(function() {
+            $('#menubar').load('menu.html');
+            $('.bxslider').bxSlider({
+                //                auto: true,
+                //                autoControls: true,
+                //                stopAutoOnClick: true,
+//                                pager: true,
+                mode: 'fade',
+                slideWidth: 300,
+                adaptiveHeight: true
+//                adaptiveHeight: true;
+            });
+        });
+    </script>
+</head>
+
+<body>
+<!--
+    <div id="menu">
+        <nav id="menubar"></nav>
+    </div>
+-->
+    <div id="wrapper">
+        <article>
+            <div class="text">
+                <h4>01</h4>
+                <h1>포트폴리오1</h1>
+                <h4>포트폴리오 한줄 설명</h4>
+                <section>
+                    <p>기간</p>
+                    <p>사용언어</p>
+                    <p>참여도</p>
+                    <p>기타등등</p>
+                </section>
+                <button>Git</button>
+            </div>
+            <div id="aa">
+            <section class="bxslider">
+                <!--            <div class="bxslider">-->
+                <div><img src="img/css3.png"></div>
+                <div><img src="img/html5.png"></div>
+                <!--            </div>-->
+            </section>
+            </div>
+        </article>
+    </div>
+
+
+</body></html>
