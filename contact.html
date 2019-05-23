@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $('document').ready(function() {
+            $('#menubar').load('menu.html');
+        });
+    </script>
+</head>
+
+<body>
+<!--    <div id="menubar"></div>-->
+    <div>
+        <div>
+            <h1>Contact</h1>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone">
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <br>
+                <label for="website">Website</label>
+                <input type="url" id="website" name="website">
+                <br>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="" cols=""></textarea>
+                <br>
+                <label for="budget">Budget</label>
+                <input type="range" id="budget" name="budget">
+                <br>
+                <label for="deadline">Deadline</label>
+                <input type="range" id="deadline" name="deadline">
+            </form>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#"><img src="" alt="email"></a>
+                        <a href="#"><img src="" alt="facebook"></a>
+                        <a href="#"><img src="" alt="instagram"></a>
+                        <a href="#"><img src="" alt="twitter"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</body></html>
