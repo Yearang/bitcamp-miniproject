@@ -1,13 +1,8 @@
-#menu {
-    height: 110px;
-    position: relative;
-    margin-left: 5%;
-    margin-right: 5%;
-}
 
 #wrap {
     color: black;
-    margin-left: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #profile {
@@ -19,19 +14,28 @@
 }
 
 #profile_text {
-    padding-top: 4%;
+    padding-top: 3%;
 }
 
 #profile_text li {
-    padding-left: 10px;
+    padding-left: 15%;
+    width: 120%;
+}
+
+#profile_text li:nth-child(1){
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+
+h1{
+    border-bottom: 1px solid #eceeef;
+    width: 60%
+
 }
 
 .content_center {
     padding: 20px 20px;
-}
-
-.contents {
-    /*            min-height: 300px;*/
 }
 
 img {
@@ -126,16 +130,17 @@ h3 {
     left: 10px;
 }
 
-.container {
+.container_ {
     padding: 10px 20px;
     position: relative;
     background-color: inherit;
-    width: 40%;
+    width: 50%;
 }
 
 .left {
     left: 0;
-    margin: 0px;
+/*    margin: 10%;*/
+    margin-right: 50%;
 }
 
 .right {
@@ -144,7 +149,7 @@ h3 {
 }
 
 .right::after {
-    left: -16px;
+    left: 0px;
 }
 
 .content {
@@ -153,53 +158,35 @@ h3 {
     position: relative;
 }
 
-.container h2 {
+.container_ h2 {
     font-weight: 600;
     font-size: 18px;
     color: #2c2c2c;
     line-height: 40px;
 }
 
-.container p {
+.container_ p {
     font-weight: 400;
     font-size: 16px;
     color: #222;
     line-height: 30px;
 }
 
-/*.career {
-            line-height: 20px;
-            font-size: 14px;
-        }
-
-        .career>ul>li {
-            padding: 10px;
-        }
-
-        .career>ul>li .car_title {
-            font-size: 16px;
-            color: #444
-        }
-
-        .career>ul>li .car_sub {
-            color: #666
-        }*/
-
 .content {
     padding-right: 10px
 }
 
-/*@media(max-width: 600px) {
+@media(max-width: 600px) {
             .timeline::after {
                 left: 0px;
             }
 
-            .container {
+            .container_ {
                 width: 100%;
                 padding: 5px 0px;
             }
 
-            .container::before {
+            .container_::before {
                 left: 60px;
                 border: medium solid white;
                 border-width: 10px 10px 10px 0;
@@ -229,4 +216,4 @@ h3 {
                 left: 50%;
                 margin-left: 0;
             }
-        }*/
+        }
