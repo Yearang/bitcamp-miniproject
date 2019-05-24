@@ -1,27 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $('document').ready(function() {
+            $('#menubar').load('menu.html');
+        });
+    </script>
     <style>
+        #wrap {
+            color: black;
+            margin: 25% 5%;
+        }
 
-/*        타임라인*/
-        img{
+        #profile {
+            height: 300px;
+        }
+
+        #education li {
+            text-align: center;
+        }
+
+        #profile_text {
+            padding-top: 4%;
+        }
+
+        #profile_text li {
+            padding-left: 10px;
+        }
+
+        .content_center {
+            padding: 20px 20px;
+        }
+
+        .contents {
+            /*            min-height: 300px;*/
+        }
+
+        img {
             width: 150px;
         }
 
-        ul li{
+        ul {
+            display: inline-block;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul li {
             list-style: none;
         }
+
+        .line {
+            margin-top: 6px;
+            width: 40px;
+            height: 3px;
+            background-color: #666;
+        }
+
+        h3 {
+            margin: 5px 0px;
+        }
+
+        .edu_list {
+            background-color: #d9d9d9;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        /*        타임라인*/
+
         .divleft2 {
             float: left;
+
         }
 
         * {
             box-sizing: border-box;
         }
 
+        #divleft {
+            float: left;
+            width: 400px;
+        }
 
+        #divright {
+            float: left;
+            width: 50%;
+        }
+
+        #divleft,
+        #divright {
+            min-width: 450px;
+            /*            position: absolute;*/
+        }
 
         .timeline {
             position: relative;
@@ -65,10 +141,12 @@
 
         .left {
             left: 0;
+            margin: 0px;
         }
 
         .right {
             left: 50%;
+            margin: 0px;
         }
 
         .right::after {
@@ -82,7 +160,6 @@
         }
 
         .container h2 {
-            /*            font-family: "Noto Sans KR";*/
             font-weight: 600;
             font-size: 18px;
             color: #2c2c2c;
@@ -90,7 +167,6 @@
         }
 
         .container p {
-            /*            font-family: "Noto Sans KR";*/
             font-weight: 400;
             font-size: 16px;
             color: #222;
@@ -164,24 +240,41 @@
 </head>
 
 <body>
+    <div id="menubar"></div>
     <div id="wrap">
+
         <div id="divleft">
-            <div>
+            <div id="profile" class="contents">
+                <div class="line"></div>
                 <h3>Profile</h3>
-                <div class="divcontent"><img class="divleft2" src="img/profile.jpg" alt="프로필 사진">
-                    <ul>
-                        <li>고예랑</li>
-                        <li>Best Developer [신입]</li>
-                        <li>1995.08.08</li>
-                        <li>서울</li>
-                        <li>010-8888-8888</li>
-                        <li>yearangko@naver.com</li>
-                    </ul>
+                <div class="content_center">
+                    <img class="divleft2" src="img/profile.jpg" alt="프로필 사진">
+                    <div id="profile_text">
+                        <ul>
+                            <li>고예랑</li>
+                            <li>Best Developer [신입]</li>
+                            <li>1995.08.08</li>
+                            <li>서울</li>
+                            <li>010-8888-8888</li>
+                            <li>yearangko@naver.com</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="divcontent">
+            <div id="education" class="contents">
+                <div class="line"></div>
                 <h3>Education</h3>
-                <ul>
+                <ul class="edu_list">
+                    <li>성신여대</li>
+                    <li>머랭쿠키</li>
+                    <li>2019-05-23</li>
+                </ul>
+                <ul class="edu_list">
+                    <li>성신여대</li>
+                    <li>머랭쿠키</li>
+                    <li>2019-05-23</li>
+                </ul>
+                <ul class="edu_list">
                     <li>성신여대</li>
                     <li>머랭쿠키</li>
                     <li>2019-05-23</li>
@@ -189,6 +282,7 @@
             </div>
         </div>
         <div id="divright">
+            <div class="line"></div>
             <h3>Career</h3>
             <div class="timeline">
                 <div class="container left">

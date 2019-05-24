@@ -1,0 +1,83 @@
+/* ===========================
+   ===== Slideshow  =====
+   =========================== */
+#slider{
+	width:100%;
+	position:relative;
+	overflow: hidden;
+}
+
+.slide{
+	position: absolute;
+	top:0;
+	left: 0;
+	width:100%;
+	display: none;
+	text-align: center;
+	margin:0;
+	padding:0;
+}
+
+.slide img{
+	vertical-align: middle;
+	width:101%;
+	margin:0;
+	padding:0;
+}
+
+.caption{
+	position: absolute;
+	width:100%;
+	text-align: cetner;
+	font-size: 18px;
+	font-weight: bold;
+	z-index: 2;
+	top: 50%;
+	margin-top: -9px;
+	color:#fff;
+
+}
+
+.prev, .next{
+	position: absolute;
+	font-size: 40px;
+	cursor: pointer;
+	top: 50%;
+	margin-top: -20px;
+	z-index: 1000;
+	color:#fff;
+}
+
+.prev{
+
+	left: 30px;
+}
+.next{
+	right:30px;
+}
+
+.dots{
+	width:100%;
+	margin: 0 auto;
+	text-align: center;
+	position: absolute;
+	z-index:10000;
+	bottom:30px;
+	left:0;
+}
+
+.dot{
+	display: inline-block;
+	background: #dedede;
+	width:15px;
+	height: 15px;
+	border-radius: 50%;
+	margin:5px;
+	cursor: pointer;
+}
+
+.dot:hover, .dot.active{
+	background: #FFF;
+
+}
+
