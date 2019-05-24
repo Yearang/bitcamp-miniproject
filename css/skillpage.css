@@ -40,7 +40,7 @@ h1 {
 }
 
 .skillGraphSubTitle {
-    margin: 10px;
+    margin: 15px;
 }
 
 .graphleft {
@@ -49,8 +49,8 @@ h1 {
 
 .graphright div.progress {
     position: relative;
-    top: 10px;
-    margin: 18px;
+    top: 18px;
+    margin: 23px;
 }
 
 @media(max-width: 800px) {
