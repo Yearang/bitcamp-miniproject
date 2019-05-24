@@ -10,16 +10,19 @@
     <link href="css/menu_mobile.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/skillpage.js"></script>
-    <script>
-        $('document').ready(function(){
-            $('#menubar').load('menu.html');
-        });
-    </script>
+    <style>
+        #menu {
+            height: 110px;
+            position: relative;
+            margin-bottom: 5%;
+        }
+    </style>
+
 </head>
 
 <body>
-    <div id="wrap">
-<div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <div id="menu"></div>
+   <div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
         <div class="container">
             <button class="navbar-toggler" type="button">
                 <span class="navbar-toggler-icon"></span>
@@ -51,8 +54,11 @@
             </div>
         </div>
     </div>
+
+    <div id="wrap">
+
         <section id="icon">
-           <h1 class="skillGraphTitle">skills</h1>
+            <h1 class="skillGraphTitle">skills</h1>
             <div>
                 <img src="img/oracle.jpg" alt="Oracle">
                 <h3>Oracle</h3>
