@@ -7,56 +7,69 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/portfolioList.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/menu_mobile.css">
 </head>
 <body>
     <div id="wrap">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <div class="container">
+<!--
+            <button class="navbar-toggler" type="button" data-target="#navbarResponsive">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarColor03">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Skill</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Content</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div id="portmiddle">
+-->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="../" class="navbar-item">home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="navbar-item">about</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle navbar-item" data-toggle="dropdown" href="#" id="themes">portfolio <span class="caret"></span></a>
+                    <div class="dropdown-menu" aria-labelledby="themes">
+                        <a class="dropdown-item" href="#">Default</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Portfolio1</a>
+                        <a class="dropdown-item" href="#">Portfolio2</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-item" href="#">contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+        <div id="portfolio_list">
+
         <h1 class="skillGraphTitle">portfolio list</h1>
-        <section id="portwrap">
+
+        <section id="port1">
             <img src="img/portfolio02.jpg" alt="portfolio img01">
-            <img src="img/portfolio02.jpg" alt="portfolio img02">
-            <img src="img/portfolio02.jpg" alt="portfolio img03">
-        </section>
-        <section id="h3wrap">
             <div class="h3_1">
                 <h3>portpolio1</h3>
             </div>
+            <p>아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 </p>
+        </section>
+        <section id="port2">
+            <img src="img/portfolio02.jpg" alt="portfolio img02">
             <div class="h3_2">
                 <h3>portpolio2</h3>
             </div>
+            <p>아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 </p>
+        </section>
+        <section id="port3">
+            <img src="img/portfolio02.jpg" alt="portfolio img03">
             <div class="h3_3">
                 <h3>portpolio3</h3>
             </div>
-        </section>
-        <section id="pwrap">
-            <p>아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 </p>
-            <p>아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 </p>
             <p>아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 아무말아무소리 </p>
         </section>
+
         </div>
     </div>
 </body>
