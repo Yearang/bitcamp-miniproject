@@ -1,0 +1,232 @@
+#menu {
+    height: 110px;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#wrap {
+    color: black;
+    margin-left: 5%;
+}
+
+#profile {
+    height: 300px;
+}
+
+#education li {
+    text-align: center;
+}
+
+#profile_text {
+    padding-top: 4%;
+}
+
+#profile_text li {
+    padding-left: 10px;
+}
+
+.content_center {
+    padding: 20px 20px;
+}
+
+.contents {
+    /*            min-height: 300px;*/
+}
+
+img {
+    width: 150px;
+}
+
+ul {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.line {
+    margin-bottom: 5px;
+    width: 40px;
+    height: 3px;
+    background-color: #666;
+}
+
+h3 {
+    margin: 0px;
+}
+
+.edu_list {
+    background-color: #d9d9d9;
+    padding: 20px;
+    margin: 20px;
+}
+
+/*        타임라인*/
+
+.divleft2 {
+    float: left;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#divleft {
+    float: left;
+    width: 400px;
+}
+
+#divright {
+    float: left;
+    width: 50%;
+}
+
+#divleft,
+#divright {
+    min-width: 300px;
+    /*            position: absolute;*/
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    /*            width: 300px;*/
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color: #d9d9d9;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.cont_b {
+    width: 5px;
+    height: 5px;
+    background-color: #4766a2;
+    position: absolute;
+}
+
+.cont_b.a {
+    right: 10px;
+}
+
+.cont_b.r {
+    left: 10px;
+}
+
+.container {
+    padding: 10px 20px;
+    position: relative;
+    background-color: inherit;
+    width: 40%;
+}
+
+.left {
+    left: 0;
+    margin: 0px;
+}
+
+.right {
+    left: 50%;
+    margin: 0px;
+}
+
+.right::after {
+    left: -16px;
+}
+
+.content {
+    padding: 20px 30px;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.container h2 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #2c2c2c;
+    line-height: 40px;
+}
+
+.container p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #222;
+    line-height: 30px;
+}
+
+/*.career {
+            line-height: 20px;
+            font-size: 14px;
+        }
+
+        .career>ul>li {
+            padding: 10px;
+        }
+
+        .career>ul>li .car_title {
+            font-size: 16px;
+            color: #444
+        }
+
+        .career>ul>li .car_sub {
+            color: #666
+        }*/
+
+.content {
+    padding-right: 10px
+}
+
+/*@media(max-width: 600px) {
+            .timeline::after {
+                left: 0px;
+            }
+
+            .container {
+                width: 100%;
+                padding: 5px 0px;
+            }
+
+            .container::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+
+            .left::after,
+            .right::after {
+                left: 15px;
+            }
+
+            .right {
+                left: 0%;
+            }
+
+            .cont_b {
+                display: none;
+            }
+
+            .timeline::after {
+                content: '';
+                position: absolute;
+                width: 0px;
+                background-color: #d9d9d9;
+                top: 0;
+                bottom: 0;
+                left: 50%;
+                margin-left: 0;
+            }
+        }*/
