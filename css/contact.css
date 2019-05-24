@@ -1,5 +1,3 @@
-/* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
 #map {
     height: 570px;
     width: 100%;
@@ -23,6 +21,17 @@
     height: 90%;
     background-color: whitesmoke;
     padding: 3%;
+    margin-left: 5%;
+}
+
+#budgetvalue {
+    display: inline-block;
+    width: 50px;
+}
+
+#deadlinevalue {
+    display: inline-block;
+    width: 50px;
 }
 
 #right {
@@ -52,11 +61,11 @@
 }
 
 #budget {
-    width: 75%;
+    width: 67.5%;
 }
 
 #deadline {
-    width: 75%
+    width: 67.5%
 }
 
 .navul {
