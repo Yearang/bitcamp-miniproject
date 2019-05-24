@@ -52,7 +52,7 @@ h1 {
     padding-bottom: 10px;
     border-bottom: 1px solid #eceeef;
     width: 60%;
-    position: inherit;
+    position: static;
 }
 
 #portfolio_list {
