@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <meta name="viewport" content="initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/contact.css">
     <script>
         $('document').ready(function() {
             $('#menubar').load('menu.html');
@@ -13,9 +14,9 @@
 </head>
 
 <body>
-<!--    <div id="menubar"></div>-->
+    <!--    <div id="menubar"></div>-->
     <div>
-        <div>
+        <div id="left">
             <h1>Contact</h1>
             <form>
                 <label for="name">Name</label>
@@ -37,9 +38,10 @@
                 <br>
                 <label for="deadline">Deadline</label>
                 <input type="range" id="deadline" name="deadline">
+                <input type="button" id="btn" value="Send">
             </form>
         </div>
-        <div>
+        <div id="right">
             <nav>
                 <ul>
                     <li>
@@ -50,6 +52,21 @@
                     </li>
                 </ul>
             </nav>
+            <div id="map"></div>
         </div>
     </div>
+    <script>
+        var map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {
+                    lat: -34.397,
+                    lng: 150.644
+                },
+                zoom: 8
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPFbclRSAzM2HUnq_3hTrM77vEGsR4TLg&callback=initMap" async defer></script>
 </body></html>
