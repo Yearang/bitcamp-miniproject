@@ -1,5 +1,10 @@
+#wrap {
+    padding: 0 10%;
+}
+h1 {
+    width: 70%
+}
 #icon {
-    padding: 0 5%;
     float: left;
     width: 55%;
     height: 100%;
@@ -23,7 +28,6 @@
 }
 
 #graph {
-    padding: 0 5%;
     float: right;
     width: 45%;
     height: 100%;
@@ -49,7 +53,7 @@
     margin: 18px;
 }
 
-@media(max-width: 480px) {
+@media(max-width: 800px) {
 
     #wrap {
         width: 100%;
