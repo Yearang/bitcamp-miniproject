@@ -15,7 +15,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.js"></script>
     <script>
         $('document').ready(function() {
+                $("#slider").slider();
             $('#menubar').load('menu.html');
+
         });
     </script>
 
@@ -68,7 +70,8 @@
             width: 100%;
             padding: 10%;
         }
-        header hr{
+
+        header hr {
             margin-right: 50%;
             margin-top: 2%;
             margin-bottom: 2%;
@@ -96,8 +99,6 @@
             }
         }
     </style>
-
-
 </head>
 
 <body>
@@ -113,16 +114,16 @@
 
         <article style="display: inline-block">
             <div class="text">
-
-
                 <h4>포트폴리오 한줄 설명</h4>
                 <section>
                     <p>기간 : 2019.05~2019.06</p>
                     <p>사용언어 : html, javascript, Jquery</p>
                     <p>참여도 : 25%</p>
                     <p>기타등등 : 비트캠프 브레인 네명이 개발한 포트폴리오 어쩌구 저쩌구 ㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㄷㄷㄷㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㄷㅋㄷㄷ</p>
+                    <p>기타등등 : 비트캠프 브레인 네명이 개발한 포트폴리오 어쩌구 저쩌구 ㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㄷㄷㄷㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㄷㅋㄷㄷ</p>
+                    <p>기타등등 : 비트캠프 브레인 네명이 개발한 포트폴리오 어쩌구 저쩌구 ㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㄷㄷㄷㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㅋㄷㄷㅋㄷㄷ</p>
                 </section>
-                <button type="button" class="btn btn-danger">Git</button>
+                <button type="button" class="btn btn-danger" onclick="https://github.com/Yearang/bitcamp-miniproject">Git</button>
             </div>
         </article>
 
@@ -130,35 +131,26 @@
             <div id="slider">
 
                 <div class="slide">
-                    <img src="img/portfolio01.jpg">
-<!--                    <hr>-->
+                    <img src="img/portfolio01.jpg" alt="portfolio01" tabindex="0">
                 </div>
 
                 <div class="slide">
-                    <img src="img/portfolio02.jpg">
+                    <img src="img/portfolio02.jpg" alt="portfolio02" tabindex="0">
                 </div>
                 <div class="slide">
-                    <img src="img/portfolio03.jpg">
+                    <img src="img/portfolio03.jpg" alt="portfolio03" tabindex="0">
                 </div>
-                <a class="prev"><i class="fas fa-chevron-left"></i></a>
-                <a class="next"><i class="fas fa-chevron-right"></i></a>
+                <a class="prev" alt="slide-left" ><i class="fas fa-chevron-left" tabindex="0"></i></a>
+                <a class="next" alt="slide-right"><i class="fas fa-chevron-right" tabindex="0"></i></a>
+<!--
                 <div class="dots">
                     <span class="dot"></span>
                     <span class="dot"></span>
                     <span class="dot"></span>
                 </div>
+-->
             </div>
         </div>
-        <div id = "temp">
-
-        </div>
-
     </div>
-
-    <script>
-        $(document).imagesLoaded(function() {
-            $("#slider").slider();
-        });
-    </script>
 
 </body></html>
