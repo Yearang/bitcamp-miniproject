@@ -6,37 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/skillpage.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="css/menu_mobile.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/skillpage.js"></script>
+    <script>
+        $('document').ready(function(){
+            $('#menubar').load('menu.html');
+        });
+    </script>
 </head>
 
 <body>
     <div id="wrap">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+<div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarColor03">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="about.html">about</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" id="portfolio">portfolio</a>
+                        <div class="dropdown-menu" aria-labelledby="download">
+                            <a class="dropdown-item" target="_blank" href="portfolioList.html">portfolio</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="portfolioDetail.html" >portfolio1</a>
+                            <a class="dropdown-item" href="portfolioDetail.html" >portfolio2</a>
+<!--                            <a class="dropdown-item" href="portfolioDetail.html" download>portfolio2</a>-->
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Skill</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Content</a>
+                        <a class="nav-link" href="contact.html">contact</a>
                     </li>
                 </ul>
             </div>
-        </nav>
+        </div>
+    </div>
         <section id="icon">
            <h1 class="skillGraphTitle">skills</h1>
             <div>
