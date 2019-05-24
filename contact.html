@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
@@ -10,12 +11,14 @@
         $('document').ready(function() {
             $('#menubar').load('menu.html');
         });
+
     </script>
+    <script src="js/contact.js"></script>
 </head>
 
 <body>
     <!--    <div id="menubar"></div>-->
-    <div>
+    <div id="wrapper">
         <div id="left">
             <h1>Contact</h1>
             <form>
@@ -34,21 +37,22 @@
                 <textarea id="message" name="message" rows="" cols=""></textarea>
                 <br>
                 <label for="budget">Budget</label>
-                <input type="range" id="budget" name="budget">
+                <input type="range" id="budget" name="budget" min="0" max="5000" step="100" onchange="updateTextInput(this.value);">
                 <br>
                 <label for="deadline">Deadline</label>
                 <input type="range" id="deadline" name="deadline">
-                <input type="button" id="btn" value="Send">
+                <br>
+                <button type="button" class="btn btn-primary">Send</button>
             </form>
         </div>
         <div id="right">
             <nav>
                 <ul>
                     <li>
-                        <a href="#"><img src="" alt="email"></a>
-                        <a href="#"><img src="" alt="facebook"></a>
-                        <a href="#"><img src="" alt="instagram"></a>
-                        <a href="#"><img src="" alt="twitter"></a>
+                        <a href="https://www.google.com"><img src="img/googleplus.png" alt="email"></a>
+                        <a href="https://www.facebook.com"><img src="img/facebook.png" alt="facebook"></a>
+                        <a href="https://www.instagram.com"><img src="img/instagram.png" alt="instagram"></a>
+                        <a href="https://twitter.com"><img src="img/twitter.png" alt="twitter"></a>
                     </li>
                 </ul>
             </nav>
@@ -67,6 +71,9 @@
                 zoom: 8
             });
         }
+
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPFbclRSAzM2HUnq_3hTrM77vEGsR4TLg&callback=initMap" async defer></script>
-</body></html>
+</body>
+
+</html>

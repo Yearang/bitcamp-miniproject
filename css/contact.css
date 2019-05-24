@@ -2,19 +2,31 @@
        * element that contains the map. */
 #map {
     height: 300px;
-    width: 300px;
+    width: 100%;
 }
 
-/* Optional: Makes the sample page fill the window. */
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+#wrapper {
+    width: 90%;
+    height: 90%;
+    padding: 5%;
 }
-#left{
+
+#left {
     float: left;
+    width: 55%;
+    height: 90%;
+    background-color: whitesmoke;
+    padding: 3%;
 }
-#right{
+
+#right {
     float: right;
+    width: 35%;
+    height: 90%;
+}
+
+#right img {
+    width: 16%;
+    height: 16%;
+    margin: 3%
 }
