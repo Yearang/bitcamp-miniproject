@@ -1,5 +1,5 @@
 #icon {
-    padding: 5%;
+    padding: 0 5%;
     float: left;
     width: 55%;
     height: 100%;
@@ -23,7 +23,7 @@
 }
 
 #graph {
-    padding: 5%;
+    padding: 0 5%;
     float: right;
     width: 45%;
     height: 100%;
