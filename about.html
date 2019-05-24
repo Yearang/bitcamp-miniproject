@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/about.css">
@@ -12,12 +13,11 @@
         $('document').ready(function() {
             $('#menubar').load('menu.html');
         });
-
     </script>
     <style>
         #menu {
             height: 110px;
-/*            position: relative;*/
+            /*            position: relative;*/
             margin-bottom: 5%;
         }
     </style>
@@ -25,7 +25,7 @@
 </head>
 
 <body>
-<!--
+    <!--
     <div id="menu">
         <nav id="menubar"></nav>
     </div>-->
@@ -39,21 +39,22 @@
 
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">about</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skillpage.html">skills</a>
+                    </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" id="portfolio">portfolio</a>
-                        <div class="dropdown-menu" aria-labelledby="download">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="portfolioList.html" id="portfolio">portfolio</a>
+                        <div class="dropdown-menu">
                             <a class="dropdown-item" target="_blank" href="portfolioList.html">portfolio</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="portfolioDetail.html">portfolio1</a>
                             <a class="dropdown-item" href="portfolioDetail.html">portfolio2</a>
-                                                        <a class="dropdown-item" href="portfolioDetail.html" download>portfolio2</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -66,8 +67,7 @@
     <div id="wrap">
         <div id="divleft">
             <div id="profile" class="contents">
-                <div class="line"></div>
-                <h3>Profile</h3>
+                <h1>Profile</h1>
                 <div class="content_center">
                     <img class="divleft2" src="img/profile.jpg" alt="프로필 사진">
                     <div id="profile_text">
@@ -82,9 +82,8 @@
                     </div>
                 </div>
             </div>
-            <div id="education" class="contents">
-                <div class="line"></div>
-                <h3>Education</h3>
+            <!--<div id="education" class="contents">
+                <h1>Education</h1>
                 <ul class="edu_list">
                     <li>성신여대</li>
                     <li>머랭쿠키</li>
@@ -100,13 +99,12 @@
                     <li>머랭쿠키</li>
                     <li>2019-05-23</li>
                 </ul>
-            </div>
+            </div>-->
         </div>
         <div id="divright">
-            <div class="line"></div>
-            <h3>Career</h3>
+            <h1>Career</h1>
             <div class="timeline">
-                <div class="container left">
+                <div class="container_ left">
                     <div class="cont_b a"></div>
                     <div class="content">
                         <h3>대학교</h3>
@@ -117,7 +115,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="container right">
+                <div class="container_ right">
                     <div class="cont_b r"></div>
                     <div class="content">
                         <h3>대학원</h3>
