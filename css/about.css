@@ -16,14 +16,20 @@
     padding-top: 3%;
 }
 
-#profile_text li {
-    padding-left: 15%;
-    width: 120%;
-}
 
 #profile_text li:nth-child(1) {
     font-weight: 800;
     margin-bottom: 10px;
+}
+
+#profile_talk li {
+    list-style: circle;
+    padding: 20px 0px 0px 20px;
+}
+
+#profile_talk{
+    margin-left: 40px;
+    margin-top: 40px;
 }
 
 
@@ -37,11 +43,12 @@ h1 {
 }
 
 img {
+    float: left;
     width: 150px;
+    margin-right: 20px;
 }
 
 ul {
-    display: inline-block;
     margin: 0px;
     padding: 0px;
 }
@@ -175,15 +182,27 @@ h3 {
 }
 
 @media(max-width: 800px) {
-    #profile_text ul li{
+    /*#profile_text li {
         padding: 0px;
 
+    }*/
+
+    #profile_text {
+        margin-top: 200px;
     }
-    #profile_text ul {
-        margin-top: 30px;
+
+    #profile_talk li{
+        padding-left: 0px;
+        padding-top: 0px;
+        margin-bottom: 5px
     }
-    #divright{
-        margin-top: 150px;
+
+    #divright {
+        margin-top: 450px;
+    }
+
+    #profile_talk {
+        margin-left: 0px;
     }
 
     .timeline::after {
