@@ -5,6 +5,10 @@
     width: 100%;
 }
 
+#menu {
+    height: 110px;
+}
+
 #wrapper {
     width: 90%;
     height: 90%;
@@ -17,6 +21,7 @@
     height: 90%;
     background-color: whitesmoke;
     padding: 3%;
+    margin: auto;
 }
 
 #right {
@@ -25,8 +30,40 @@
     height: 90%;
 }
 
-#right img {
+#name {
+    width: 50%;
+}
+
+#phone {
+    width: 50%;
+}
+
+#email {
+    width: 75%;
+}
+
+#website {
+    width: 75%;
+}
+
+#message {
+    width: 75%;
+}
+
+#budget {
+    width: 75%;
+}
+
+#deadline {
+    width: 75%
+}
+
+.navul {
+    list-style: none;
+}
+
+.navul a img {
     width: 16%;
     height: 16%;
-    margin: 3%
+    margin: 10%
 }

@@ -7,47 +7,60 @@
     <meta name="viewport" content="initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/contact.js">
+    </script>
     <script>
         $('document').ready(function() {
             $('#menubar').load('menu.html');
+            console.log('aa');
         });
-
     </script>
-    <script src="js/contact.js"></script>
 </head>
 
 <body>
-    <!--    <div id="menubar"></div>-->
+    <div id="menu">
+        <nav id="menubar"></nav>
+    </div>
     <div id="wrapper">
         <div id="left">
             <h1>Contact</h1>
             <form>
                 <label for="name">Name</label>
+                <br>
                 <input type="text" id="name" name="name">
+                <br>
                 <label for="phone">Phone</label>
+                <br>
                 <input type="text" id="phone" name="phone">
                 <br>
                 <label for="email">Email</label>
+                <br>
                 <input type="email" id="email" name="email">
                 <br>
                 <label for="website">Website</label>
+                <br>
                 <input type="url" id="website" name="website">
                 <br>
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="" cols=""></textarea>
+                <br>
+                <textarea id="message" name="message" rows="5"></textarea>
                 <br>
                 <label for="budget">Budget</label>
-                <input type="range" id="budget" name="budget" min="0" max="5000" step="100" onchange="updateTextInput(this.value);">
+                <br>
+                <input type="range" id="budget" name="budget" min="0" max="5000" step="100">
                 <br>
                 <label for="deadline">Deadline</label>
-                <input type="range" id="deadline" name="deadline">
+                <br>
+                <input type="range" id="deadline" name="deadline" min="0" max="13" step="1">
                 <br>
                 <button type="button" class="btn btn-primary">Send</button>
             </form>
         </div>
         <div id="right">
             <nav>
-                <ul>
+                <ul class="navul">
                     <li>
                         <a href="https://www.google.com"><img src="img/googleplus.png" alt="email"></a>
                         <a href="https://www.facebook.com"><img src="img/facebook.png" alt="facebook"></a>
@@ -71,9 +84,6 @@
                 zoom: 8
             });
         }
-
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPFbclRSAzM2HUnq_3hTrM77vEGsR4TLg&callback=initMap" async defer></script>
-</body>
-
-</html>
+</body></html>
