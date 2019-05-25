@@ -36,11 +36,11 @@ $(document).ready(function () {
                     .append('whoami - show information about yearang<br>')
                     .append('date - show current time<br>')
                     .append('exit - close terminal</p>');
-
             } else if (input == 'whoami') {
                 $('.command:last').append("<p>I'm yearang!</p>");
             } else if (input == 'date') {
-
+                var date = new Date();
+                 $('.command:last').append('<p>'+ date+ '</p>');
             } else if (input == 'exit') {
                 $('#terminalModal').modal('hide');
                 return false;
