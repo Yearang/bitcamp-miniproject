@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>해당하는 페이지 이름</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/terminal.js"></script>
+    <style>
+        .close {
+            line-height: 1;
+            color: white;
+        }
+
+        .modal-header {
+            padding: 5px;
+            padding-right: 10px;
+            background-color: #343a40;
+        }
+
+        .modal-open {
+            overflow: hidden;
+        }
+
+        .modal-open .modal {
+            overflow-x: hidden;
+            overflow-y: auto;
+            pointer-events: auto;
+        }
+
+        .modal-body {
+            position: relative;
+            background-color: #343a40;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            border: 0;
+            border: 0;
+            border-radius: 0;
+            outline: 0;
+            height: 300px;
+            color: white;
+            max-height: 501px;
+            overflow: scroll;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        /*
+        #exampleModal {
+            top: 50%;
+            margin-top: -50px;
+        }
+*/
+
+        input {
+            background-color: #343a40;
+            border: 1px;
+        }
+
+        input:focus {
+            color: white;
+            border-width: 10px;
+            outline: none;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" id="modal_show">
+        JQUERY를 이용한 모달 열기
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <b class="modal-title">terminal</b>
+                    <!--                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>-->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+
+                <div class="modal-body">
+
+                    <!--
+                    <div class="command">
+                        <b>yongjiyeon@yjy-com</b>
+                        :~$
+                        <input type="text" class="input">
+                    </div>
+-->
+                    <!--                    <div class="chat"></div>-->
+                    <!--                    <input type="text">-->
+                </div>
+                <!--                <div class="modal-footer">-->
+
+
+                <!--
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-primary" id="close_modal">다른 방식으로 모달 닫기</button>
+-->
+                <!--                </div>-->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

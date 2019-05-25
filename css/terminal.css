@@ -1,0 +1,56 @@
+  .close {
+            line-height: 1;
+            color: white;
+        }
+
+        .modal-header {
+            padding: 5px;
+            padding-right: 10px;
+            background-color: #343a40;
+        }
+
+        .modal-open {
+            overflow: hidden;
+        }
+
+        .modal-open .modal {
+            overflow-x: hidden;
+            overflow-y: auto;
+            pointer-events: auto;
+        }
+
+        .modal-body {
+            position: relative;
+            background-color: #343a40;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            border: 0;
+            border: 0;
+            border-radius: 0;
+            outline: 0;
+            height: 300px;
+            color: white;
+            max-height: 501px;
+            overflow: scroll;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        /*
+        #exampleModal {
+            top: 50%;
+            margin-top: -50px;
+        }
+*/
+
+        .input {
+            background-color: #343a40;
+            border: 1px;
+        }
+
+        .input:focus {
+            color: white;
+            border-width: 10px;
+            outline: none;
+        }
+
