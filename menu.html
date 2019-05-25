@@ -22,6 +22,21 @@
         $('document').ready(function() {});
     </script>
 -->
+    <script>
+        $('document').ready(function() {
+            var windowWidth = $(window).width();
+            if (windowWidth < 480) {
+                console.log($('.dropdown-toggle'));
+                $('.dropdown-toggle').attr('data-toggle', 'dropdown');
+            }
+
+            console.log(this);
+            $('.navbar-toggler').on('click', function() {
+                console.log('aaa');
+                $('.navbar-collapse').toggle();
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -80,3 +95,4 @@
     </div>
 
 </body></html>
+
