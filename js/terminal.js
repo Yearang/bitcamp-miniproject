@@ -1,6 +1,6 @@
 function a() {
     $('.command:last').after('<div class="command">');
-    $('.command:last').append('<b>koyearang@kyr-com</b>:~$ ').append('<input type="text" class="ipnut">');
+    $('.command:last').append('<b>koyearang@kyr-com</b>:~$ ').append('<input type="text" class="terminalipnut">');
 }
 $(document).ready(function () {
 //    $("#modal_show").click(function () {
@@ -8,8 +8,8 @@ $(document).ready(function () {
 //    });
     $('#terminalModal').on('shown.bs.modal', function () {
         $('.modal-body').append('<div class="command">');
-        $('.command:last').append('<b>koyearang@kyr-com</b>:~$ ').append('<input type="text" class="ipnut">');
-        $('input').focus();
+        $('.command:last').append('<b>koyearang@kyr-com</b>:~$ ').append('<input type="text" class="terminalipnut">');
+        $('.terminalipnut').focus();
     });
 
     $("#close_modal").click(function () {
@@ -23,7 +23,7 @@ $(document).ready(function () {
         a();
     });
     $('.modal-body').on('click', function () {
-        $('input').focus();
+        $('.terminalipnut').focus();
     });
     $('.modal-body').on('keydown', 'input', (function (key) {
         if (key.keyCode == 13) {
@@ -49,7 +49,7 @@ $(document).ready(function () {
             }
             $(this).remove();
             a();
-            $('input').focus();
+            $('.terminalipnut').focus();
         }
     }));
 });
