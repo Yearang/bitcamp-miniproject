@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--   slide -->
+    <link rel="stylesheet" href="test/css/slider.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+    <script src="test/js/jquery.slider.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.js"></script>
+    <script>
+        $('document').ready(function() {
+            $("#slider").slider();
+            $('#menubar').load('menu.html');
+
+        });
+    </script>
+    <link rel="stylesheet" href="css/portfolioDetail.css">
+
+</head>
+
+<body>
+    <div id="menu">
+        <nav id="menubar"></nav>
+    </div>
+
+    <div id="wrapper">
+        <header>
+            <h2>리듬게임</h2>
+            <hr>
+        </header>
+
+        <article style="display: inline-block">
+            <div class="text">
+                <h4>java를 이용한 리듬게임</h4>
+                <section>
+                    <ul>
+                        <li>기간 : 2018.06 ~ 2018.08</li>
+                        <li>개발환경 : Java, Eclipse, Zavazoom</li>
+                        <li>참여도 : 25%</li>
+                        <li>프로젝트 추친 목적 : 자바 활용능력 기르기
+                        </li>
+                    </ul>
+                </section>
+                <a href="https://github.com/Yearang/Sungshin_Beat_Rhythm_Game">
+                <button type="button" class="btn btn-danger">Git</button>
+                </a>
+            </div>
+        </article>
+
+        <div class="centering">
+            <div id="slider">
+
+
+
+                <div class="slide">
+                    <img src="img/portfolioDetail/%EB%A6%AC%EB%93%AC%EA%B2%8C%EC%9E%842.png" alt="리듬게임" tabindex="0">
+                </div>
+
+                <div class="slide">
+                    <img src="img/portfolioDetail/%EB%A6%AC%EB%93%AC%EA%B2%8C%EC%9E%843.png" alt="리듬게임" tabindex="0">
+                </div>
+
+                <div class="slide">
+                    <img src="img/portfolioDetail/%EB%A6%AC%EB%93%AC%EA%B2%8C%EC%9E%844.png" alt="리듬게임" tabindex="0">
+                </div>
+                <a class="prev" alt="slide-left"><i class="fas fa-chevron-left" tabindex="0"></i></a>
+                <a class="next" alt="slide-right"><i class="fas fa-chevron-right" tabindex="0"></i></a>
+                <!--
+                <div class="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+-->
+            </div>
+        </div>
+    </div>
+
+</body></html>

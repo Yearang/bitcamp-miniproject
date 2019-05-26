@@ -1,0 +1,75 @@
+  #slider {
+      width: 100%;
+  }
+
+  #menu {
+      height: 110px;
+      position: relative;
+      margin-bottom: 5%;
+  }
+
+  #wrapper {
+      margin-top: 50px;
+      max-width: 80%;
+      margin: 0 auto;
+  }
+
+  article {
+      width: 30%;
+      display: inline-block;
+      float: left;
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+
+  .centering {
+      margin: 0;
+      padding: 0;
+      /*            margin: 0 auto;*/
+      float: left;
+      display: inline-block;
+      max-width: 70%;
+      width: 55%;
+  }
+
+  #slider {
+      display: inline-block;
+      float: left;
+  }
+
+  .btn-danger {
+      width: 80%;
+  }
+
+  img {
+      width: 100%;
+      padding: 10%;
+  }
+
+  header hr {
+      margin-right: 50%;
+      margin-top: 2%;
+      margin-bottom: 2%;
+  }
+
+  @media (max-width: 576px) {
+      .centering {
+          clear: both;
+          margin-top: 5%;
+          max-width: 100%;
+          width: 100%;
+      }
+
+      body {
+          width: 100%;
+      }
+
+      article {
+          width: 100%;
+          margin: 0 auto;
+      }
+
+      .btn-danger {
+          width: 100%;
+      }
+  }
