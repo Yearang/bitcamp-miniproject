@@ -11,8 +11,11 @@ $(document).ready(function () {
         $('.command:last').append('<b>koyearang@kyr-com</b>:~$ ').append('<input type="text" class="terminalipnut">');
         $('.terminalipnut').focus();
     });
-
-    $("#close_modal").click(function () {
+//
+//    $("#close_modal").click(function () {
+//        $("#terminalModal").modal("hide");
+//    });
+    $(".close").on('click',function () {
         $("#terminalModal").modal("hide");
     });
 
@@ -25,9 +28,9 @@ $(document).ready(function () {
     $('.modal-body').on('click', function () {
         $('.terminalipnut').focus();
     });
+
     $('.modal-body').on('keydown', 'input', (function (key) {
         if (key.keyCode == 13) {
-            console.log('aa');
             var input = $(this).val();
             $('.command:last').append(input);
             if (input == 'help') {
@@ -42,8 +45,16 @@ $(document).ready(function () {
                 var date = new Date();
                  $('.command:last').append('<p>'+ date+ '</p>');
             } else if (input == 'exit') {
-                $('#terminalModal').modal('hide');
-                return false;
+//                $('#terminalModal').modal('hide');
+                //console.log($(this).parents('#terminalModal')[0]);
+//                $("#terminalModal").modal('hide');
+                console.log($('#close_modal'));
+                $('.close').trigger('click');
+                console.log('hide');
+                //$(this).parents('#terminalModal')[0].modal('hide');
+//                $(bb).modal('hide');
+//                $("#terminalModal").modal("hide");
+                return;
             } else {
                 $('.command:last').append('<p>' + input + ': command not found</p>');
             }
