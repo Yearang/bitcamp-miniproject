@@ -76,10 +76,10 @@ h1 {
     position: relative;
     right: 10px;
 }
-    h3, p {
+h3, .pp {
         margin: 0 15% 30px
     }
-    p {
+.pp {
         margin-bottom: 50px;
     }
     #portfolio_list {
