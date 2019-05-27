@@ -14,6 +14,12 @@
     <script>
         $('document').ready(function() {
             $('#menubar').load('menu.html');
+            $(':button').click(function() {
+                $('form').each(function() {
+                    this.reset();
+                });
+                $('#salaryvalue').html('0');
+            });
         });
 
     </script>
