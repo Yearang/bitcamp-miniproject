@@ -27,7 +27,7 @@
     padding: 20px 0px 0px 20px;
 }
 
-#profile_talk{
+#profile_talk {
     margin-left: 40px;
     margin-top: 40px;
 }
@@ -37,6 +37,18 @@ h1 {
     border-bottom: 1px solid #eceeef;
     width: 60%
 }
+
+.stars {
+    z-index: 0;
+    position: absolute;
+
+    top: 0;
+    background-repeat: repeat-x, repeat-x repeat-y;
+    transform: translate3D(0em, 0em, 0);
+    animation: stars 21s ease;
+    transform-style: preserve-3d;
+}
+
 
 .content_center {
     padding: 20px 20px;
@@ -74,7 +86,7 @@ h3 {
     margin: 20px;
 }
 
-/*        타임라인*/
+
 
 .divleft2 {
     float: left;
@@ -191,7 +203,7 @@ h3 {
         margin-top: 200px;
     }
 
-    #profile_talk li{
+    #profile_talk li {
         padding-left: 0px;
         padding-top: 0px;
         margin-bottom: 5px
