@@ -28,11 +28,13 @@
             if (windowWidth < 480) {
                 console.log($('.dropdown-toggle'));
                 $('.dropdown-toggle').attr('data-toggle', 'dropdown');
+                $('.dropdown-toggle').on('click',function(){
+                    $('.dropdown-menu').toggle();
+                });
             }
 
             console.log(this);
             $('.navbar-toggler').on('click', function() {
-                console.log('aaa');
                 $('.navbar-collapse').toggle();
             });
         });
