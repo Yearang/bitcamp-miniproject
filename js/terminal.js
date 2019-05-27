@@ -31,8 +31,8 @@ $(document).ready(function () {
             var input = $(this).val();
             $('.command:last').append(input);
             if (input == 'help') {
-                $('.command:last').append("<p>yearang's terminal, version 1.0.0 <br>")
-                    .append('help - show all commands<br>')
+                $('.command:last').append("<p>yearang's terminal, version 1.0.0")
+                    .append('<br>help - show all commands<br>')
                     .append('whoami - show information about yearang<br>')
                     .append('date - show current time<br>')
                     .append('exit - close terminal</p>');
