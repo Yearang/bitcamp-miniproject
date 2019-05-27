@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
@@ -39,6 +40,19 @@
             line-height: 0.5em;
             font-size: 6em;
         }
+
+        @media(max-width: 800px) {
+            #name1, #name2{
+                font-size: 3em;
+            }
+
+            #wrap{
+                width: 100%;
+                display: inline-block;
+                text-align: center;
+                margin-left: 0px;
+            }
+        }
     </style>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -54,6 +68,7 @@
         .navbar-light .navbar-nav .nav-link{
             color: white !important;
         }
+
 
     </style>
 </head>
