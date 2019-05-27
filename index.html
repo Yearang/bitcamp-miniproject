@@ -6,7 +6,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
-
         body {
             background: url("img/index/mainbg.jpeg") no-repeat center center fixed;
             background-size: cover;
@@ -42,11 +41,13 @@
         }
 
         @media(max-width: 800px) {
-            #name1, #name2{
+
+            #name1,
+            #name2 {
                 font-size: 3em;
             }
 
-            #wrap{
+            #wrap {
                 width: 100%;
                 display: inline-block;
                 text-align: center;
@@ -58,15 +59,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $('document').ready(function() {
-            $('#menubar').load('menu.html');
+            // $('#menubar').load('menu.html');
+
+            $.ajax({
+                url: "menu.html",
+                success: function(successdata) {
+                    $('#menubar').html(successdata);
+                    var data = $('#menubar .bg-light');
+                    $('.bg-light').css('background-color', 'rgba(255, 255, 255, 0)');
+                    $('.navbar-toggler').on('click', function() {
+                        if (($('.navbar-collapse').is(':visible'))) {
+                            $('.bg-light').css('background-color', 'rgba(255, 255, 255, 0)');
+                        } else {
+                            $('.bg-light').css('background-color', 'white');
+                        }
+                    });
+                },
+                error: function(error) {
+                    console.log("error");
+                }
+            });
+
+            var data = $('.navbar navbar-expand-lg');
+            console.log("test ....");
+            console.log(data);
+
         });
     </script>
     <style>
-        .bg-light{
-            background-color: rgba(255,255,255,0) !important;
-        }
-        .navbar-light .navbar-nav .nav-link{
-            color: white !important;
+        .bg-light {
+            background-color: rgba(255, 255, 255, 0);
         }
 
 
@@ -87,4 +109,27 @@
         <br>
         <span>제 홈페이지에 오신걸 환영합니다:)</span>
     </div>
+    <script>
+        //        $(window).bind("load", function() { // insert your code here
+        //            $('.bg-light').css('color', 'red');
+        //            console.log('bbbccc');
+        //        });
+        $('#menubar').on('click', '.btn_del', function() {
+            $(this).parent().remove(); //여기서 this는 .btn_del 이 됨.
+
+        })
+
+
+
+
+        console.log('bbbbb');
+        //        console.log(!($('.navbar-collapse').is(':visible')));
+        //        console.log($('#menubar > div.navbar.navbar-expand-lg.fixed-top.navbar-light.bg-light'));
+        $('.navbar-collapse').attr('color', 'red');
+
+        //        if (!($('.navbar-collapse').is(':visible'))) {
+        //            console.log('cccccc');
+        $('.bg-light').css('border', '10px solid red');
+        //        }
+    </script>
 </body></html>
