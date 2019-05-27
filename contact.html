@@ -87,14 +87,21 @@
 
         var map = new daum.maps.Map(mapContainer, mapOption);
 
-        var imageSrc = 'img/contact/pin.png',
-            imageSize = new daum.maps.Size(64, 69),
-            imageOption = {
-                alt: 'marker',
-                offset: new daum.maps.Point(27, 69)
-            };
+        /* var imageSrc = 'img/contact/pin.png',
+             imageSize = new daum.maps.Size(64, 69),
+             imageOption = {
+                 alt: 'marker',
+                 offset: new daum.maps.Point(27, 69)
+             };
 
-        var markerImage = new daum.maps.MarkerImage(imageSrc, imageSize, imageOption),
+         var markerImage = new daum.maps.MarkerImage(imageSrc, imageSize, imageOption)*/
+        var markerImage = new daum.maps.MarkerImage(
+                'img/contact/pin.png',
+                new daum.maps.Size(31, 35), {
+                    offset: new daum.maps.Point(16, 34),
+                    alt: "마커 이미지 예제",
+                }
+            ),
             markerPosition = new daum.maps.LatLng(37.570440, 126.985326);
 
         var marker = new daum.maps.Marker({
