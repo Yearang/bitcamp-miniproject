@@ -27,6 +27,9 @@ h3 {
     width: 100%;
     display: inline-block;
 }
+#portfolio_list p {
+    text-align: center;
+}
 #port1 {
     display: inline-block;
     float: left;
