@@ -15,6 +15,7 @@
         $('document').ready(function() {
             $('#menubar').load('menu.html');
         });
+
     </script>
 </head>
 
@@ -79,16 +80,31 @@
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ff24913c47ff2f3fe936e5f7996e21fc">
     </script>
     <script>
-        var container = document.getElementById('map');
-        var options = {
-            center: new daum.maps.LatLng(37.570440, 126.985326),
-            level: 1
-        };
-        var map = new daum.maps.Map(container, options);
-        var markerPosition = new daum.maps.LatLng(37.570440, 126.985326);
+        var mapContainer = document.getElementById('map'),
+            mapOption = {
+                center: new daum.maps.LatLng(37.570440, 126.985326),
+                level: 1
+            };
+
+        var map = new daum.maps.Map(mapContainer, mapOption);
+
+        var imageSrc = 'img/contact/pin.png',
+            imageSize = new daum.maps.Size(64, 69),
+            imageOption = {
+                offset: new daum.maps.Point(27, 69)
+            };
+
+        var markerImage = new daum.maps.MarkerImage(imageSrc, imageSize, imageOption),
+            markerPosition = new daum.maps.LatLng(37.570440, 126.985326);
+
         var marker = new daum.maps.Marker({
-            position: markerPosition
+            position: markerPosition,
+            image: markerImage
         });
+
         marker.setMap(map);
+
     </script>
-</body></html>
+</body>
+
+</html>
