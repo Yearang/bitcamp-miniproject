@@ -28,9 +28,13 @@
             if (windowWidth < 480) {
                 console.log($('.dropdown-toggle'));
                 $('.dropdown-toggle').attr('data-toggle', 'dropdown');
-                $('.dropdown-toggle').on('click',function(){
+                $('.dropdown-toggle').on('click', function() {
                     $('.dropdown-menu').toggle();
                 });
+            }
+            if (windowWidth < 990) {
+                $('.dropdown-menu').prepend('<div class="dropdown-divider"></div>');
+                $('.dropdown-menu').prepend('<a class="dropdown-item" href="portfolioList.html">portfolio</a>');
             }
 
             console.log(this);
