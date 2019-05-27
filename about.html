@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/menu.css">
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
         $('document').ready(function() {
+            $('#menubar').load('menu.html');
+        });
+
+        /*$('document').ready(function() {
             var windowWidth = $(window).width();
             if (windowWidth < 480) {
                 console.log($('.dropdown-toggle'));
@@ -23,7 +26,7 @@
                 console.log('aaa');
                 $('.navbar-collapse').toggle();
             });
-        });
+        });*/
     </script>
 
     <style>
@@ -37,10 +40,11 @@
 </head>
 
 <body>
-    <!--
+
     <div id="menu">
         <nav id="menubar"></nav>
-    </div>-->
+    </div>
+<!--
 
     <div id="menu"></div>
     <div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
@@ -78,6 +82,7 @@
             </div>
         </div>
     </div>
+-->
 
     <!-- Modal -->
     <div class="modal fade" id="terminalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
