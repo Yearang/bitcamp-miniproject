@@ -34,8 +34,12 @@
 
 #text_talk{
     margin-top: 20px;
+    padding-bottom: 4px;
 }
 
+#insert{
+    padding: 4px 30px;
+}
 
 h1 {
     border-bottom: 1px solid #eceeef;
