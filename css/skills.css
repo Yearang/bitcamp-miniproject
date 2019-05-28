@@ -157,4 +157,17 @@ input {
         width: 100px;
         margin-bottom: 10px;
     }
+    input {
+        position: inherit;
+    }
+    .etc_icon {
+    height: 70px;
+    width: 70px;
+    margin-bottom: 10px;
+}
+.etcimg h3 {
+    width: 80px;
+    text-align: center;
+    font-size: 14px;
+}
 }

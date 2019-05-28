@@ -108,6 +108,7 @@ $(document).ready(function () {
 
     //skill icon animation
     $('img.etc_icon').on('mouseover', function() {
+         if ($(this).width() >= 80) {
             $(this).animate({
                 width: '95px',
                 height: '95px'
@@ -117,6 +118,18 @@ $(document).ready(function () {
                     height: '100px'
                 });
             });
+        } else {
+            $(this).animate({
+                width: '65px',
+                height: '65px'
+            }, 300, function () {
+                $(this).animate({
+                    width: '70px',
+                    height: '70px'
+                });
+            });
+        }
+
     });
     $('img:lt(7)').on('mouseover', function () {
         if ($('img').width() >= 140) {
