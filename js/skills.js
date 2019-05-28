@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    $('section.etc_graph').hide();
+
     var width = 1;
     var id = setInterval(frame1, 20);
 
@@ -11,6 +13,7 @@ $(document).ready(function () {
         }
     }
     var id = setInterval(frame2, 20);
+//    width = 1;
 
     function frame2() {
         if (width >= 97) {
@@ -21,6 +24,7 @@ $(document).ready(function () {
         }
     }
     var id = setInterval(frame3, 20);
+//    width = 1;
 
     function frame3() {
         if (width >= 95) {
@@ -31,6 +35,7 @@ $(document).ready(function () {
         }
     }
     var id = setInterval(frame4, 20);
+//    width = 1;
 
     function frame4() {
         if (width >= 85) {
@@ -41,6 +46,7 @@ $(document).ready(function () {
         }
     }
     var id = setInterval(frame5, 20);
+//    width = 1;
 
     function frame5() {
         if (width >= 90) {
@@ -51,6 +57,7 @@ $(document).ready(function () {
         }
     }
     var id = setInterval(frame6, 20);
+//    width = 1;
 
     function frame6() {
         if (width >= 80) {
@@ -61,6 +68,7 @@ $(document).ready(function () {
         }
     }
     var id = setInterval(frame7, 20);
+//    width = 1;
 
     function frame7() {
         if (width >= 80) {
@@ -70,6 +78,8 @@ $(document).ready(function () {
             $('#graph7').css('width', width + '%');
         }
     }
+
+
     //%표시
     var per = [];
     for (let i = 0; i < $('.progress-bar').length; i++) {
@@ -87,6 +97,12 @@ $(document).ready(function () {
             per.push(80);
         } else if (i == 6) {
             per.push(80);
+        } else if (i == 7) {
+            per.push(65);
+        } else if (i == 8) {
+            per.push(70);
+        } else if (i == 9) {
+            per.push(50);
         }
         $('.progress-bar').eq(i).on('mouseover', function () {
             $('.progress-bar').eq(i).append(per[i]);
@@ -97,7 +113,18 @@ $(document).ready(function () {
     }
 
     //skill icon animation
-    $('img').on('mouseover', function () {
+    $('img.etc_icon').on('mouseover', function() {
+            $(this).animate({
+                width: '95px',
+                height: '95px'
+            }, 300, function () {
+                $(this).animate({
+                    width: '100px',
+                    height: '100px'
+                });
+            });
+    });
+    $('img:lt(7)').on('mouseover', function () {
         if ($('img').width() >= 140) {
             $(this).animate({
                 width: '140px',
@@ -110,16 +137,52 @@ $(document).ready(function () {
             });
         } else {
             $(this).animate({
-                width: '110px',
-                height: '110px'
+                width: '90px',
+                height: '90px'
             }, 300, function () {
                 $(this).animate({
-                    width: '150px',
-                    height: '150px'
+                    width: '100px',
+                    height: '100px'
                 });
             });
-
         }
     });
 
+    $('input').on('click', function () {
+        $('.etc_graph').fadeToggle();
+        width = 1;
+        var id = setInterval(frame8, 20);
+
+        function frame8() {
+            if (width >= 65) {
+                clearInterval($('#graph8'))
+            } else {
+                width++;
+                $('#graph8').css('width', width + '%');
+            }
+        }
+        width = 1;
+        var id = setInterval(frame9, 20);
+
+        function frame9() {
+            if (width >= 70) {
+                clearInterval($('#graph9'))
+            } else {
+                width++;
+                $('#graph9').css('width', width + '%');
+            }
+        }
+        width = 1;
+        var id = setInterval(frame10, 20);
+
+        function frame10() {
+            if (width >= 50) {
+                clearInterval($('#graph10'))
+            } else {
+                width++;
+                $('#graph10').css('width', width + '%');
+            }
+        }
+
+    });
 });
