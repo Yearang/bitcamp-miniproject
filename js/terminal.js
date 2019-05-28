@@ -37,7 +37,12 @@ $(document).ready(function () {
                     .append('to [page] - move to page<br>')
                     .append('exit - close terminal</p>');
             } else if (input == 'whoami') {
-                $('.command:last').append("<p>I'm yearang!</p>");
+                $('.command:last').append("<p>Yong Ji Yeon")
+                .append('<br>Best Developer[Jounior]')
+                .append('<br>1995.02.05')
+                .append('<br>Seoul')
+                .append('<br>010-1234-5555')
+                .append('<br>yjy@naver.com');
             } else if (input == 'date') {
                 var date = new Date();
                 $('.command:last').append('<p>' + date + '</p>');
