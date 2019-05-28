@@ -13,7 +13,6 @@ $(document).ready(function () {
         }
     }
     var id = setInterval(frame2, 20);
-//    width = 1;
 
     function frame2() {
         if (width >= 97) {
@@ -24,7 +23,6 @@ $(document).ready(function () {
         }
     }
     var id = setInterval(frame3, 20);
-//    width = 1;
 
     function frame3() {
         if (width >= 95) {
@@ -35,7 +33,6 @@ $(document).ready(function () {
         }
     }
     var id = setInterval(frame4, 20);
-//    width = 1;
 
     function frame4() {
         if (width >= 85) {
@@ -46,7 +43,6 @@ $(document).ready(function () {
         }
     }
     var id = setInterval(frame5, 20);
-//    width = 1;
 
     function frame5() {
         if (width >= 90) {
@@ -57,7 +53,6 @@ $(document).ready(function () {
         }
     }
     var id = setInterval(frame6, 20);
-//    width = 1;
 
     function frame6() {
         if (width >= 80) {
@@ -68,7 +63,6 @@ $(document).ready(function () {
         }
     }
     var id = setInterval(frame7, 20);
-//    width = 1;
 
     function frame7() {
         if (width >= 80) {
