@@ -12,6 +12,19 @@
     <script>
         $('document').ready(function() {
             $('#menubar').load('menu.html');
+            $('#insert').on('click', function() {
+
+                if ($('#text_talk').val() != '') {
+                    console.log($('#text_talk').val());
+                    var newTalk = $('#text_talk').val();
+                    var newList = document.createElement('li');
+                    newList.append(newTalk);
+//                    $('#profile_talk').append(newList);
+                    $('#text_talk').before(newList);
+                    $('#text_talk').val('');
+                }
+            });
+
         });
     </script>
 
@@ -38,7 +51,7 @@
                 <div class="content_center">
                     <img class="divleft2" src="img/about/profile.jpg" alt="프로필 사진">
                     <div id="profile_text">
-                        <ul>
+                        <ul id="profile_">
                             <li>고예랑</li>
                             <li>Best Developer [신입]</li>
                             <li>1995.08.08</li>
@@ -47,17 +60,18 @@
                             <li>yrk@naver.com</li>
                         </ul>
                         <ul id="profile_talk">
-                            <li># bitcamp-miniproject</li>
-                            <li>## 비트캠프 브레인즈-☆</li>
-                            <li>## 빛나는하루...^^ 아자아자화이팅!!!!</li>
-                            <li>## !!!10월 18일 지선탄신일!!!</li>
-                            <li>## 19950808 ㅋ</li>
-                            <li>## 960121 ㅋ</li>
-                            <li>## 비트캠프 어벤저스★</li>
-                            <li>## 저장하시고</li>
-                            <li>## 커밋!</li>
-
+                            <li>bitcamp-miniproject</li>
+                            <li>비트캠프 브레인즈-☆</li>
+                            <li>빛나는하루...^^ 아자아자화이팅!!!!</li>
+                            <li>!!!10월 18일 지선탄신일!!!</li>
+                            <li>19950808 ㅋ</li>
+                            <li>960121 ㅋ</li>
+                            <li>비트캠프 어벤저스-★</li>
+                            <li>저장필수</li>
+                            <input type="text" id="text_talk">
+                            <input type="button" value="입력" id="insert">
                         </ul>
+
                     </div>
                 </div>
             </div>

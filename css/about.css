@@ -17,7 +17,7 @@
 }
 
 
-#profile_text li:nth-child(1) {
+#profile_ li:nth-child(1) {
     font-weight: 800;
     margin-bottom: 10px;
 }
@@ -30,6 +30,10 @@
 #profile_talk {
     margin-left: 40px;
     margin-top: 40px;
+}
+
+#text_talk{
+    margin-top: 20px;
 }
 
 
@@ -110,13 +114,11 @@ h3 {
 #divleft,
 #divright {
     min-width: 300px;
-    /*            position: absolute;*/
 }
 
 .timeline {
     position: relative;
     max-width: 1200px;
-    /*            width: 300px;*/
     margin: 0 auto;
     margin-top: 40px;
 }
@@ -156,7 +158,6 @@ h3 {
 
 .left {
     left: 0;
-    /*    margin: 10%;*/
     margin-right: 50%;
 }
 
@@ -194,27 +195,28 @@ h3 {
 }
 
 @media(max-width: 800px) {
-    /*#profile_text li {
-        padding: 0px;
 
-    }*/
-
+    #divleft, #divright{
+        width: 100%;
+    }
     #profile_text {
         margin-top: 200px;
+    }
+
+    #profile_talk{
+        margin-left: 10px;
+        margin-bottom: 60px;
     }
 
     #profile_talk li {
         padding-left: 0px;
         padding-top: 0px;
-        margin-bottom: 5px
-    }
-
-    #divright {
-        margin-top: 450px;
+        margin-bottom: 5px;
     }
 
     #profile_talk {
-        margin-left: 0px;
+        margin-left: 20px;
+        float: left;
     }
 
     .timeline::after {
