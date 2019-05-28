@@ -22,7 +22,9 @@ $(document).ready(function () {
     $('.modal-body').on('click', function () {
         $('.terminalipnut').focus();
     });
-
+    $("#terminalModal").draggable({
+        handle: ".modal-header"
+    });
     $('.modal-body').on('keydown', 'input', (function (key) {
         if (key.keyCode == 13) {
             var input = $(this).val();
