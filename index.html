@@ -33,12 +33,14 @@
         #name1 {
             font-weight: 800;
             font-size: 6em;
+            line-height: 1em;
         }
 
+/*
         #name2 {
-            line-height: 0.5em;
             font-size: 6em;
         }
+*/
 
         @media(max-width: 800px) {
 
@@ -102,11 +104,11 @@
     <div id="wrap">
 
         <span>―― Developer &amp; UI/UX Designer</span>
-        <br><br>
+        <br><br><br>
         <span id="name1"></span>
         <br>
-        <span id="name2"></span>
-        <br><br>
+<!--        <span id="name2"></span>-->
+        <br>
         <span>안녕하세요 문지선의 포트폴리오입니다.</span>
         <br>
         <span>제 홈페이지에 오신걸 환영합니다:)</span>
@@ -120,27 +122,25 @@
 
         $('.bg-light').css('border', '10px solid red');
 
-        async function type() {
-            typing("Jiseon Moon’s", 0, '#name1').then( () =>{
-                return typing("Portfolio", 0, '#name2');
-            })
-//            await typing();
-            console.log('done');
+
+        var text = "Jiseon Moon’s<br>Portfolio"
+        var cnt = 0;
+        var speed = 70; //글자가 찍히는 속도
+        var timer1 = null;
+
+        function gogogo() {
+            document.getElementById('name1').innerHTML = text.substring(0, cnt) + "_";
+            cnt++;
+            timer1 = setTimeout('gogogo()', speed);
+
+            if (text.length < cnt) {
+                // 아래 주석으로 처리된 부분을 지우면 한번만 실행됩니다.
+                clearTimeout(timer1)
+                cnt = 0;
+            }
         }
+        gogogo();
 
-        async function typing(str, c, id) {
-            return new Promise(function(resolve, reject) {
-                setInterval(function() {
-                    if (c < str.length) {
-                        $(id).append(str[c]);
-                    }
-                    c++;
-//                    console.log(c);
-                    resolve('hi');
-                }, 200)
-            });
-        };
 
-        type();
     </script>
 </body></html>

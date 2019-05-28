@@ -9,20 +9,22 @@ $(document).ready(function () {
         $('.terminalipnut').focus();
     });
 
-    $(".close").on('click', function () {
-        $("#terminalModal").modal("hide");
-    });
+//    $(".close").on('click', function () {
+//        $("#terminalModal").modal("hide");
+//    });
 
     $('#terminalModal').on('hidden.bs.modal', function (e) {
         console.log('modal close');
         //        $(this).find('form')[0].reset()
         $('.modal-body').empty();
-        a();
+        newInput();
     });
     $('.modal-body').on('click', function () {
         $('.terminalipnut').focus();
     });
-
+//    $("#terminalModal").draggable({
+//        handle: ".modal-header"
+//    });
     $('.modal-body').on('keydown', 'input', (function (key) {
         if (key.keyCode == 13) {
             var input = $(this).val();
@@ -35,7 +37,12 @@ $(document).ready(function () {
                     .append('to [page] - move to page<br>')
                     .append('exit - close terminal</p>');
             } else if (input == 'whoami') {
-                $('.command:last').append("<p>I'm yearang!</p>");
+                $('.command:last').append("<p>Yong Ji Yeon")
+                .append('<br>Best Developer[Jounior]')
+                .append('<br>1995.02.05')
+                .append('<br>Seoul')
+                .append('<br>010-1234-5555')
+                .append('<br>yjy@naver.com');
             } else if (input == 'date') {
                 var date = new Date();
                 $('.command:last').append('<p>' + date + '</p>');
