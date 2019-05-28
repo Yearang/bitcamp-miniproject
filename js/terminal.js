@@ -1,21 +1,15 @@
-function a() {
+function newInput() {
     $('.command:last').after('<div class="command">');
     $('.command:last').append('<b>koyearang@kyr-com</b>:~$ ').append('<input type="text" class="terminalipnut">');
 }
 $(document).ready(function () {
-//    $("#modal_show").click(function () {
-//        $("#terminalModal").modal("show");
-//    });
     $('#terminalModal').on('shown.bs.modal', function () {
         $('.modal-body').append('<div class="command">');
         $('.command:last').append('<b>koyearang@kyr-com</b>:~$ ').append('<input type="text" class="terminalipnut">');
         $('.terminalipnut').focus();
     });
-//
-//    $("#close_modal").click(function () {
-//        $("#terminalModal").modal("hide");
-//    });
-    $(".close").on('click',function () {
+
+    $(".close").on('click', function () {
         $("#terminalModal").modal("hide");
     });
 
@@ -38,28 +32,51 @@ $(document).ready(function () {
                     .append('<br>help - show all commands<br>')
                     .append('whoami - show information about yearang<br>')
                     .append('date - show current time<br>')
+                    .append('move [page] - move to page<br>')
                     .append('exit - close terminal</p>');
             } else if (input == 'whoami') {
                 $('.command:last').append("<p>I'm yearang!</p>");
             } else if (input == 'date') {
                 var date = new Date();
-                 $('.command:last').append('<p>'+ date+ '</p>');
+                $('.command:last').append('<p>' + date + '</p>');
             } else if (input == 'exit') {
-//                $('#terminalModal').modal('hide');
-                //console.log($(this).parents('#terminalModal')[0]);
-//                $("#terminalModal").modal('hide');
                 console.log($('#close_modal'));
                 $('.close').trigger('click');
-                console.log('hide');
-                //$(this).parents('#terminalModal')[0].modal('hide');
-//                $(bb).modal('hide');
-//                $("#terminalModal").modal("hide");
                 return;
+            } else if (input.substring(0, 4) == 'move') {
+                var to = input.substring(5, );
+                to = $.trim(to).toLowerCase();
+                console.log(to);
+                var url = '';
+                if (to == 'home') {
+                    url = 'index.html';
+                    console.log('url' + url);
+                } else if (to == 'portfolio' || to == 'portfoliolist') {
+                    url = 'portfolioList.html';
+                } else if (to.substring(0, 9) == 'portfolio') {
+                    url = 'portfolioDetail' + to.substring(9, 10) + '.html';
+                    console.log(url);
+                } else if (to == 'terminal') {
+                    $('.command:last').append("<p>Here is terminal!</p>");
+                    $(this).remove();
+                    newInput();
+                    $('.terminalipnut').focus();
+                    return;
+                } else if (to == 'about' || to == 'skills' || to == 'contact') {
+                    url = to + '.html';
+                } else {
+                    $('.command:last').append('<p>' + input + ': command not found</p>');
+                    $(this).remove();
+                    newInput();
+                    $('.terminalipnut').focus();
+                    return;
+                }
+                $(location).attr('href', url);
             } else {
                 $('.command:last').append('<p>' + input + ': command not found</p>');
             }
             $(this).remove();
-            a();
+            newInput();
             $('.terminalipnut').focus();
         }
     }));
