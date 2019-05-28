@@ -32,7 +32,7 @@ $(document).ready(function () {
                     .append('<br>help - show all commands<br>')
                     .append('whoami - show information about yearang<br>')
                     .append('date - show current time<br>')
-                    .append('move [page] - move to page<br>')
+                    .append('to [page] - move to page<br>')
                     .append('exit - close terminal</p>');
             } else if (input == 'whoami') {
                 $('.command:last').append("<p>I'm yearang!</p>");
@@ -43,8 +43,8 @@ $(document).ready(function () {
                 console.log($('#close_modal'));
                 $('.close').trigger('click');
                 return;
-            } else if (input.substring(0, 4) == 'move') {
-                var to = input.substring(5, );
+            } else if (input.substring(0, 2) == 'to') {
+                var to = input.substring(2, );
                 to = $.trim(to).toLowerCase();
                 console.log(to);
                 var url = '';
