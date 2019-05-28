@@ -192,22 +192,26 @@ h3 {
 
 @media(max-width: 800px) {
 
+    #divleft, #divright{
+        width: 100%;
+    }
     #profile_text {
         margin-top: 200px;
+    }
+
+    #profile_talk{
+        margin-left: 10px;
+        margin-bottom: 60px;
     }
 
     #profile_talk li {
         padding-left: 0px;
         padding-top: 0px;
-        margin-bottom: 5px
+        margin-bottom: 5px;
     }
 
     #profile_talk {
-        margin-bottom: 60px;
-    }
-
-    #profile_talk {
-        margin-left: 0px;
+        margin-left: 20px;
         float: left;
     }
 
