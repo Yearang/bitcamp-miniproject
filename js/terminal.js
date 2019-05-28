@@ -28,7 +28,7 @@ $(document).ready(function () {
             var input = $(this).val();
             $('.command:last').append(input);
             if (input == 'help') {
-                $('.command:last').append("<p>yearang's terminal, version 1.0.0")
+                $('.command:last').append("<p>yearang, jiseon, jiyeon, kyeong jin terminal, version 1.0.0")
                     .append('<br>help - show all commands<br>')
                     .append('whoami - show information about yearang<br>')
                     .append('date - show current time<br>')
