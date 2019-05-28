@@ -90,8 +90,6 @@
         .bg-light {
             background-color: rgba(255, 255, 255, 0);
         }
-
-
     </style>
 </head>
 
@@ -101,35 +99,43 @@
 
         <span>―― Developer &amp; UI/UX Designer</span>
         <br><br>
-        <span id="name1">Jiseon Moon’s</span>
+        <span id="name1"></span>
         <br>
-        <span id="name2">Portfolio</span>
+        <span id="name2"></span>
         <br><br>
         <span>안녕하세요 문지선의 포트폴리오입니다.</span>
         <br>
         <span>제 홈페이지에 오신걸 환영합니다:)</span>
     </div>
     <script>
-        //        $(window).bind("load", function() { // insert your code here
-        //            $('.bg-light').css('color', 'red');
-        //            console.log('bbbccc');
-        //        });
         $('#menubar').on('click', '.btn_del', function() {
             $(this).parent().remove(); //여기서 this는 .btn_del 이 됨.
 
         })
-
-
-
-
-        console.log('bbbbb');
-        //        console.log(!($('.navbar-collapse').is(':visible')));
-        //        console.log($('#menubar > div.navbar.navbar-expand-lg.fixed-top.navbar-light.bg-light'));
         $('.navbar-collapse').attr('color', 'red');
 
-        //        if (!($('.navbar-collapse').is(':visible'))) {
-        //            console.log('cccccc');
         $('.bg-light').css('border', '10px solid red');
-        //        }
+
+        async function type() {
+            typing("Jiseon Moon’s", 0, '#name1').then( () =>{
+                return typing("Portfolio", 0, '#name2');
+            })
+//            await typing();
+            console.log('done');
+        }
+
+        async function typing(str, c, id) {
+            return new Promise(function(resolve, reject) {
+                setInterval(function() {
+                    if (c < str.length) {
+                        $(id).append(str[c]);
+                    }
+                    c++;
+                    console.log(c);
+                    resolve('hi');
+                }, 200)
+            });
+        };
+        type();
     </script>
 </body></html>
