@@ -9,22 +9,22 @@ $(document).ready(function () {
         $('.terminalipnut').focus();
     });
 
-    $(".close").on('click', function () {
-        $("#terminalModal").modal("hide");
-    });
+//    $(".close").on('click', function () {
+//        $("#terminalModal").modal("hide");
+//    });
 
     $('#terminalModal').on('hidden.bs.modal', function (e) {
         console.log('modal close');
         //        $(this).find('form')[0].reset()
         $('.modal-body').empty();
-        a();
+        newInput();
     });
     $('.modal-body').on('click', function () {
         $('.terminalipnut').focus();
     });
-    $("#terminalModal").draggable({
-        handle: ".modal-header"
-    });
+//    $("#terminalModal").draggable({
+//        handle: ".modal-header"
+//    });
     $('.modal-body').on('keydown', 'input', (function (key) {
         if (key.keyCode == 13) {
             var input = $(this).val();
