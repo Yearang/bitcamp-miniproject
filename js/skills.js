@@ -1,75 +1,75 @@
 $(document).ready(function () {
     $('section.etc_graph').hide();
 
-    var width = 1;
-    var id = setInterval(frame1, 20);
+    var width1 = 1;
+    var id = setInterval(frame1, 10);
 
     function frame1() {
-        if (width >= 85) {
+        if (width1 >= 85) {
             clearInterval($('#graph1'))
         } else {
-            width++;
-            $('#graph1').css('width', width + '%');
+            width1++;
+            $('#graph1').css('width', width1 + '%');
         }
     }
-    var id = setInterval(frame2, 20);
-
+    var id = setInterval(frame2, 10);
+    var width2 = 1;
     function frame2() {
-        if (width >= 97) {
+        if (width2 >= 97) {
             clearInterval($('#graph2'))
         } else {
-            width++;
-            $('#graph2').css('width', width + '%');
+            width2++;
+            $('#graph2').css('width', width2 + '%');
         }
     }
-    var id = setInterval(frame3, 20);
-
+    var id = setInterval(frame3, 10);
+    var width3 = 1;
     function frame3() {
-        if (width >= 95) {
+        if (width3 >= 95) {
             clearInterval($('#graph3'))
         } else {
-            width++;
-            $('#graph3').css('width', width + '%');
+            width3++;
+            $('#graph3').css('width', width3 + '%');
         }
     }
-    var id = setInterval(frame4, 20);
-
+    var id = setInterval(frame4, 10);
+    var width4 = 1;
     function frame4() {
-        if (width >= 85) {
+        if (width4 >= 85) {
             clearInterval($('#graph4'))
         } else {
-            width++;
-            $('#graph4').css('width', width + '%');
+            width4++;
+            $('#graph4').css('width', width4 + '%');
         }
     }
-    var id = setInterval(frame5, 20);
-
+    var id = setInterval(frame5, 10);
+    var width5 = 1;
     function frame5() {
-        if (width >= 90) {
+        if (width5 >= 90) {
             clearInterval($('#graph5'))
         } else {
-            width++;
-            $('#graph5').css('width', width + '%');
+            width5++;
+            $('#graph5').css('width', width5 + '%');
         }
     }
-    var id = setInterval(frame6, 20);
-
+    var id = setInterval(frame6, 10);
+    var width6 = 1;
     function frame6() {
-        if (width >= 80) {
+        if (width6 >= 80) {
             clearInterval($('#graph6'))
         } else {
-            width++;
-            $('#graph6').css('width', width + '%');
+            width6++;
+            $('#graph6').css('width', width6 + '%');
         }
     }
-    var id = setInterval(frame7, 20);
-
+    var id = setInterval(frame7, 10);
+    var width7 = 1;
     function frame7() {
-        if (width >= 80) {
+        if (width7 >= 80) {
             clearInterval($('#graph7'))
         } else {
-            width++;
-            $('#graph7').css('width', width + '%');
+            width7++;
+            $('#graph7').css('width', width7 + '%');
         }
     }
 
@@ -144,37 +144,35 @@ $(document).ready(function () {
 
     $('input').on('click', function () {
         $('.etc_graph').fadeToggle();
-        width = 1;
-        var id = setInterval(frame8, 20);
+        var width8 = 1;
+        var id = setInterval(frame8, 10);
 
         function frame8() {
-            if (width >= 65) {
+            if (width8 >= 65) {
                 clearInterval($('#graph8'))
             } else {
-                width++;
-                $('#graph8').css('width', width + '%');
+                width8++;
+                $('#graph8').css('width', width8 + '%');
             }
         }
-        width = 1;
-        var id = setInterval(frame9, 20);
-
+        var id = setInterval(frame9, 10);
+        var width9 = 1;
         function frame9() {
-            if (width >= 70) {
+            if (width9 >= 70) {
                 clearInterval($('#graph9'))
             } else {
-                width++;
-                $('#graph9').css('width', width + '%');
+                width9++;
+                $('#graph9').css('width', width9 + '%');
             }
         }
-        width = 1;
-        var id = setInterval(frame10, 20);
-
+        var id = setInterval(frame10, 10);
+        var width10 = 1;
         function frame10() {
-            if (width >= 50) {
+            if (width10 >= 50) {
                 clearInterval($('#graph10'))
             } else {
-                width++;
-                $('#graph10').css('width', width + '%');
+                width10++;
+                $('#graph10').css('width', width10 + '%');
             }
         }
 
