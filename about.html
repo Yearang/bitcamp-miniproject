@@ -9,22 +9,10 @@
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/menu.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/about.js"></script>
     <script>
         $('document').ready(function() {
             $('#menubar').load('menu.html');
-            $('#insert').on('click', function() {
-
-                if ($('#text_talk').val() != '') {
-                    console.log($('#text_talk').val());
-                    var newTalk = $('#text_talk').val();
-                    var newList = document.createElement('li');
-                    newList.append(newTalk);
-//                    $('#profile_talk').append(newList);
-                    $('#text_talk').before(newList);
-                    $('#text_talk').val('');
-                }
-            });
-
         });
     </script>
 
