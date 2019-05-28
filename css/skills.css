@@ -43,6 +43,7 @@ h1 {
     margin: 15px;
 }
 .etcimg {
+    margin-right: 3%;
     width: 30%;
     float: left;
 }
@@ -52,8 +53,9 @@ h1 {
     font-size: 20px;
 }
 #etcicon {
+    margin: 0 15px;
     display: inline-block;
-    height: 150px;
+    height: 130px;
     width: 100%;
 }
 .etc_icon {
